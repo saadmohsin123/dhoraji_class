@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Education<input type="checkbox" onclick='callKaring2(event);' value="education"/>
+    Profession<input type="checkbox"  onclick='callKaring2(event);' value="profession"/>
+    <p>Gender:</p>
+    <br />
+        Male
+        <input type="radio" id="input1" value="male" name="gender" onclick='callKaring(event);' />
+        Female
+        <input type="radio" id="input2" value="female" name="gender" onclick='callKaring(event);' />
+</body>
+<script>
+    // var totalvalue = 0;
+    // var itemsArray = [
+    // {name:"juice",price:50,quantity:3},
+    // {name:"cookie",price:30,quantity:9},
+    // {name:"juice",price:880,quantity:1},
+    // {name:"juice",price:100,quantity:2}]
+    // for(i = 0;i < itemsArray.length; i++){
+    //    var item = itemsArray[i].price * itemsArray[i].quantity;
+    //  console.log('item', item)
+    //  totalvalue += item
+
+    // }
+    // console.log(totalvalue)
+
+    // var properties ={
+    //     name:"ali",
+    //     email:"alihassan@gmail.com",
+    //     password:"hassan77",
+    //     age:"15",
+    //     gender:"male",
+    //     city:"karachi",
+    //     country:"pakistan"} 
+
+    // var toCheck = "country" in properties;
+    // console.log(toCheck)
+    // var check = "lastname" in properties;
+    // console.log(check)
+
+    // function Plan(name, className, section, age) {
+    //     this.name = name;
+    //     this.price = className;
+    //     this.space = section;
+    //     this.transfer = age;
+    // }
+    // var plan1 = new Plan("Saad", 7 , "k", 15)
+    // var plan2 = new Plan("Ali", 8 , "I", 16)
+    // var plan3 = new Plan("Saad", 7 , "k", 17)
+    // var plan4 = new Plan("Saad", 9 , "J", 18)
+
+    // console.log(plan1);
+    // console.log(plan2);
+    // console.log(plan3);
+    // console.log(plan4);
+
+    function Dat_a(name, gender, address, education, profession){
+        this.name = name
+        this.gender = gender
+        this.address = address
+        this.education = education
+        this.profession = profession
+    }        
+
+
+    function callKaring(event){
+       var radio = event.target.value;
+       console.log(radio)
+       var data1 = new Data('name',radio , "ajasgjkAS", "MATRIC", "SGHAD" )
+       console.log(data1)
+    }
+    function callKaring2(event){
+       var chckboxValue = event.target.value;
+       console.log(chckboxValue)
+       var data2 = new Data('name','male', "ajasgjkAS", chckboxValue)
+       console.log(data2);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
